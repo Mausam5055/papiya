@@ -1,0 +1,110 @@
+/* Apply a default font for the entire website */
+body {
+  font-family: 'Times New Roman', serif;;
+  /* Default font for body */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  background-color: #fefcbf; /* Set background color */
+}
+
+/* Navbar specific styles */
+.navbar-name {
+  font-family: 'Dancing Script', cursive; /* Apply custom font to navbar */
+  font-size: 2.5rem; /* Adjust size as needed */
+  color: #4A4A4A; /* Change color if needed */
+  letter-spacing: 1px; /* Slight spacing for elegance */
+  text-align: center; /* Center the navbar name */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+  /* Mobile menu adjustments */
+  .mobile-menu {
+    position: absolute; /* Position the mobile menu */
+    top: 4rem; /* Adjust based on navbar height */
+    left: 10px; /* Shift the mobile menu slightly to the left */
+    width: calc(100% - 20px); /* Adjust width to account for left margin */
+    background-color: #fefcbf; /* Match the navbar background */
+    z-index: 10; /* Ensure it appears above other content */
+    display: block; /* Ensure mobile menu shows */
+  }
+
+  /* Navbar adjustments for mobile */
+  nav {
+    padding: 0; /* Remove padding to align with the left */
+    width: 100%; /* Ensure navbar takes full width */
+  }
+
+  /* Navbar container on mobile */
+  .navbar {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: center; /* Center items in the navbar */
+    width: 100%; /* Ensure navbar takes full width */
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for navbar */
+    position: fixed;
+    top: 0;
+    z-index: 1000; /* Ensure it stays on top */
+  }
+
+  .navbar-item {
+    margin: 5px 0; /* Adjust margin for stacked items */
+    width: 100%; /* Full width for mobile items */
+    text-align: center; /* Align text to the center */
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .navbar-item a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    display: block;
+  }
+
+  .navbar-item a:hover {
+    color: #000;
+    background-color: #fefcbf; /* Background change on hover */
+  }
+
+  /* Reduce navbar name size for mobile */
+  .navbar-name {
+    font-size: 2rem; /* Smaller font size for mobile */
+  }
+}
+
+@media (min-width: 601px) {
+  /* Navbar for larger screens (desktop/tablet) */
+  .navbar {
+    display: flex;
+    flex-direction: row; /* Align items horizontally on larger screens */
+    justify-content: space-between; /* Spread out items */
+    padding: 0 20px;
+    width: 100%; /* Ensure navbar takes full width */
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  /* Adjust the navbar item styling for larger screens */
+  .navbar-item {
+    margin: 0;
+    padding: 15px;
+    text-align: left;
+  }
+
+  .navbar-item a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  .navbar-item a:hover {
+    color: #000;
+    background-color: #fefcbf; /* Background change on hover */
+  }
+}
+
+
+
+
+

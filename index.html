@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Papiya Nath Mazumdar - Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="theme-light">
+    <!-- Navbar Section -->
+    <nav class="fixed w-full z-50 bg-yellow-50/90 backdrop-blur-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <!-- Navbar Title -->
+          <div class="flex-shrink-0">
+            <h1 class="navbar-name">Papiya Nath Mazumdar</h1>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a href="#home" class="text-gray-700 hover:text-black px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+              <a href="#education" class="text-gray-700 hover:text-black px-3 py-2 rounded-md text-sm font-medium transition-colors">Education</a>
+              <a href="#journey" class="text-gray-700 hover:text-black px-3 py-2 rounded-md text-sm font-medium transition-colors">Journey</a>
+              <a href="#gallery" class="text-gray-700 hover:text-black px-3 py-2 rounded-md text-sm font-medium transition-colors">Gallery</a>
+              <a href="#blog" class="text-gray-700 hover:text-black px-3 py-2 rounded-md text-sm font-medium transition-colors">Blog</a>
+              <a href="#contact" class="text-gray-700 hover:text-black px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+            </div>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="flex items-center md:hidden">
+            <button id="menu-toggle" class="p-2 rounded-md text-gray-700 hover:text-black hover:bg-yellow-100" aria-label="Toggle menu">
+              <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 12h18M3 6h18M3 18h18" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu Dropdown (Initially hidden) -->
+    <div id="mobile-menu" class="md:hidden absolute top-16 right-0 w-full bg-yellow-50 hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-black hover:bg-yellow-100">Home</a>
+        <a href="#education" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-black hover:bg-yellow-100">Education</a>
+        <a href="#journey" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-black hover:bg-yellow-100">Journey</a>
+        <a href="#gallery" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-black hover:bg-yellow-100">Gallery</a>
+        <a href="#blog" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-black hover:bg-yellow-100">Blog</a>
+        <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-black hover:bg-yellow-100">Contact</a>
+      </div>
+    </div>
+
+    <!-- Main Content Placeholder -->
+    <div id="root">
+      <h2>Welcome to My Portfolio</h2>
+    </div>
+
+    <!-- JavaScript for React will be loaded here -->
+    <script type="module" src="src/main.tsx"></script>
+
+    <!-- Mobile Menu Toggle JavaScript -->
+    <script>
+      const menuToggle = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
