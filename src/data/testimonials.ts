@@ -1,7 +1,7 @@
 export const testimonials = [
   {
     id: 1,
-    name: "Ananya",
+    name: "Krishna Narayan singh",
     role: "Friend",
     content: "As an M.Pharm student, Papiya has demonstrated remarkable analytical skills and an in-depth understanding of pharmaceutical sciences. Her commitment to learning and research is exceptional.",
     imageUrl: "/assets/testimonial1.jpg"
