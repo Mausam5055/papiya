@@ -43,14 +43,13 @@ export const Profile = () => {
           </div>
         </div>
 
-        <h1 className={`text-4xl md:text-5xl font-bold mb-4 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
-          Papiya Nath Mazumdar
-        </h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+  Papiya Nath Mazumdar
+</h1>
 
-        <p className="text-lg leading-relaxed mx-auto max-w-3xl text-center">
-          {/* 🍁Welcome to my digital portfolio🍁 */}
-        </p>
-
+<p className="text-lg leading-relaxed mx-auto max-w-3xl text-center text-white">
+  🍁Welcome to my digital portfolio🍁
+</p>
         <br />
       </div>
 
