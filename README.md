@@ -1,3 +1,11 @@
+# 🚀 My Portfolio (Version 3)  
+
+![Portfolio Preview](public/assets/preview.png)  
+
+## 🌟 Introduction  
+This is **Version 3** of my personal portfolio...
+
+
 📂 Papiya's Portfolio
 
 🌟 A Modern and Elegant Portfolio Built with React
