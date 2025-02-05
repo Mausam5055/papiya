@@ -1,4 +1,4 @@
-# 🚀 My Portfolio (Version 3)  
+# 🚀 Client's Portfolio
 
 ![Portfolio Preview](public/assets/preview.png)  
 
